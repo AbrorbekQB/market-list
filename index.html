@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market List</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="add-new-fruit__wrapper">
+      <form class="add-new-fruit__form">
+      <button class="add-up-new-fruit__btn" type="button"><span></span> Add up</button>
+      <label class="visually-hidden" for="add-new-fruit__input-id">Add a new fruit</label>
+      <input class="add-new-fruit_input" id="add-new-fruit__input-id" type="text" placeholder="Write a new fruit's name" required autocomplete="off">
+      <button class="add-down-new-fruit__btn" type="button"><span></span> Add down</button>
+      </form>
+      <form class="remove-fruit__form">
+        <label class="visually-hidden" for="remove-fruit__input-id">Remove fruit</label>
+        <input class="remove-fruit__input" id="remove-fruit__input-id" type="number" required placeholder="Write fruit's number for remove" min="1">
+        <button class="remove-fruit__btn" type="button">
+          <span></span>Remove
+        </button>
+      </form>
+    </div>
+    <div class="show-all-fruites__wrapper">
+      <h3 class="fruites__list__heading">Market list</h3>
+      <ul class="fruites__list">
+      </ul>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

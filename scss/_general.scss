@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+form {
+  text-align: center;
+}
+body {
+	background-color: black;
+}
+button {
+	width: 140px;
+	& span {
+		display: block;
+		margin: 0 auto;
+		width: 25px;
+		height: 25px;
+		background-color: white;
+	}
+}
+input {
+  border-radius: 6px;
+  padding: 8px 10px;
+  border: 1px solid #000;
+  outline-width: 6px;
+  outline: none;
+}
+input:hover,
+input:focus {
+  box-shadow: 0 0 19px 1px rgba(178, 190, 195,1.0);
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	margin: -1px;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	clip: rect(0,0,0,0);
+	overflow: hidden;
+}
