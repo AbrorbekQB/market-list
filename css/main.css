@@ -1,0 +1,321 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+form {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+button {
+  width: 140px;
+}
+
+button span {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+
+input {
+  border-radius: 6px;
+  padding: 8px 10px;
+  border: 1px solid #000;
+  outline-width: 6px;
+  outline: none;
+}
+
+input:hover,
+input:focus {
+  -webkit-box-shadow: 0 0 19px 1px #b2bec3;
+          box-shadow: 0 0 19px 1px #b2bec3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  min-height: 600px;
+  margin: 40px auto 0;
+  border-radius: 10px;
+  background-image: url("../img/bgimage.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.add-new-fruit__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  padding: 20px 86px;
+}
+
+.add-new-fruit__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-up-new-fruit__btn {
+  background-color: #27ae60;
+  border-radius: 6px;
+  border: 2px solid #27ae60;
+  color: white;
+  padding: 5px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  outline: none;
+}
+
+.add-up-new-fruit__btn:hover, .add-up-new-fruit__btn:focus {
+  background-color: #fff;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+.add-up-new-fruit__btn:hover:hover span,
+.add-up-new-fruit__btn:hover:focus span, .add-up-new-fruit__btn:focus:hover span,
+.add-up-new-fruit__btn:focus:focus span {
+  background-color: #27ae60;
+}
+
+.add-up-new-fruit__btn span {
+  -webkit-mask-image: url("../img/up.svg");
+          mask-image: url("../img/up.svg");
+}
+
+.add-new-fruit_input {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.add-down-new-fruit__btn {
+  background-color: #27ae60;
+  border-radius: 6px;
+  border: 2px solid #27ae60;
+  color: white;
+  padding: 5px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  outline: none;
+}
+
+.add-down-new-fruit__btn:hover, .add-down-new-fruit__btn:focus {
+  background-color: #fff;
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+.add-down-new-fruit__btn:hover:hover span,
+.add-down-new-fruit__btn:hover:focus span, .add-down-new-fruit__btn:focus:hover span,
+.add-down-new-fruit__btn:focus:focus span {
+  background-color: #27ae60;
+}
+
+.add-down-new-fruit__btn span {
+  -webkit-mask-image: url("../img/down.svg");
+          mask-image: url("../img/down.svg");
+}
+
+.remove-fruit__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.remove-fruit__input {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.remove-fruit__btn {
+  background-color: red;
+  border-radius: 6px;
+  border: 2px solid red;
+  color: white;
+  padding: 5px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  outline: none;
+}
+
+.remove-fruit__btn:hover, .remove-fruit__btn:focus {
+  background-color: #fff;
+  border-color: red;
+  color: red;
+}
+
+.remove-fruit__btn:hover:hover span,
+.remove-fruit__btn:hover:focus span, .remove-fruit__btn:focus:hover span,
+.remove-fruit__btn:focus:focus span {
+  background-color: red;
+}
+
+.remove-fruit__btn span {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 6px;
+  -webkit-mask-image: url("../img/trash_can.svg");
+          mask-image: url("../img/trash_can.svg");
+}
+
+.show-all-fruites__wrapper {
+  width: 50%;
+  padding: 125px 175px 125px 185px;
+}
+
+.fruites__list__heading {
+  font-family: cursive;
+  margin: 0;
+}
+
+.fruites__list {
+  margin: 0;
+  min-height: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.fruites__list::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.fruites__list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.fruites__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.fruites__list::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.fruites__list::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.fruites__item {
+  list-style-type: circle;
+}
+
+.fruites__name {
+  font-family: cursive;
+  margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+  .show-all-fruites__wrapper {
+    padding: 125px 175px 125px 105px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    background-position: bottom center;
+    background-size: 800px;
+  }
+  .add-new-fruit__wrapper {
+    width: 100%;
+  }
+  .show-all-fruites__wrapper {
+    width: 100%;
+    height: 700px;
+    padding: 18% 25% 20% 26%;
+  }
+  .fruites__list__heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-size: 90%;
+  }
+  .show-all-fruites__wrapper {
+    width: 100%;
+    height: 80vw;
+    padding: 18% 25% 20% 26%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    background-size: 105%;
+  }
+  .add-new-fruit__wrapper {
+    padding: 0;
+  }
+  .show-all-fruites__wrapper {
+    height: 90vw;
+    padding: 18% 25% 20% 26%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
